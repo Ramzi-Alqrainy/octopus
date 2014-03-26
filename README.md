@@ -7,18 +7,20 @@ Firstly, this tool is built for recording search events, search click, and Searc
 
 
 How to install ?
+------------------------------------------
 
 run the following commands :
-
+```bash
 cd $home/octopus
 
 ./octopus-webapp
-
+```
 
 To make sure everything is working fine.
-
+```bash
 localhost:8080/ws/ping
-
+```
 To log the events 
-
+```bash
 localhost:8080/ws/record?event=search&q=ramzi&...   // you will find all parameter inside table mapping
+```
