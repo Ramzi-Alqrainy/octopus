@@ -1,0 +1,22 @@
+<form method="POST" action="">
+<input type="text" name="date_range" class="date_range" size="24" value="{{date_range}}"><br/>
+<textarea name="query">{{query}}</textarea><br/>
+<input type="submit" value="query">
+</form>
+
+<div>
+%for result in results:
+<div>
+%for k,v in result.items():
+<span>{{k}}={{v}}</span> 
+%end
+</div>
+%end
+</div>
+
+<script>
+$(document).ready(function(){
+$('.date_range').datepick({dateFormat: 'yyyy-mm-dd', firstDay:6, rangeSelect: true, rangeSeparator: ' : '});
+});
+</script>
+%rebase layout.html **locals()

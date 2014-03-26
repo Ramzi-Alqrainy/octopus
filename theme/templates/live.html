@@ -1,0 +1,19 @@
+<div id='loading' class='loading'></div>
+<select>
+  <option value="_all">All</option>
+  <option value="search">search</option>
+  <option value="search_click">search_click</option>
+</select> [not funtional now]
+
+<div id="live_events">
+%include live_events_block event_divs=event_divs
+</div>
+
+<script>
+last_id={{last_id}};
+$(document).ready(function(){
+setInterval('get_live_events()',500);
+});
+</script>
+
+%rebase layout.html **locals()
