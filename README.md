@@ -8,6 +8,7 @@ Firstly, this tool is built for recording search events, search click, and Searc
 
 How to install ?
 ------------------------------------------
+install python and python-bson
 
 run the following commands :
 ```bash
